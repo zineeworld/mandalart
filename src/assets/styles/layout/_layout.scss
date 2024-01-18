@@ -1,0 +1,27 @@
+.ma-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #222;
+  color: white;
+
+  .ma-inner {
+    max-width: 800px;
+    width: 100%;
+    padding: 24px;
+    margin: 48px auto;
+    text-align: center;
+  }
+
+  .ma-title {
+    margin-bottom: 1em;
+    font-size: 2rem;
+  }
+
+  .ma-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    max-width: 100%;
+  }
+}

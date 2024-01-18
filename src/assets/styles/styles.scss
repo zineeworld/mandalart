@@ -1,0 +1,11 @@
+// 순서 중요 -------------------------------------
+@import './abstracts/variables';
+@import './abstracts/mixin';
+
+@import './base/reset';
+// 순서 중요 끝 ----------------------------------
+
+// components는 ABC 순으로 넣어주세요
+@import './components/box';
+
+@import './layout/layout';

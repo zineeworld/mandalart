@@ -1,0 +1,22 @@
+.ma-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ma-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  //font-size: 4vmin;
+  aspect-ratio: 1;
+  word-break: keep-all;
+  overflow: hidden;
+  &:nth-child(5) {
+    background-color: rgba(white, 0.2);
+  }
+  &:focus {
+    border-color: var(--warning);
+    background-color: rgba(white, 0.1);
+  }
+}

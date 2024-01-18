@@ -1,34 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.scss'
+import {MandalartList} from "./components/MandalartList.tsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const data1 = ['','','','','','','','','']
+  const data2 = ['','','','','','','','','']
+  const data3 = ['','','','','','','','','']
+  const data4 = ['','','','','','','','','']
+  const data5 = ['','','','','','','','','']
+  const data6 = ['','','','','','','','','']
+  const data7 = ['','','','','','','','','']
+  const data8 = ['','','','','','','','','']
+  const data9 = ['','','','','','','','','']
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="ma-wrapper">
+      <div className="ma-inner">
+        <h1 className="ma-title">Mandalart</h1>
+        <div className="ma-area">
+          <MandalartList data={data1} />
+          <MandalartList data={data2} />
+          <MandalartList data={data3} />
+          <MandalartList data={data4} />
+          <MandalartList data={data5} />
+          <MandalartList data={data6} />
+          <MandalartList data={data7} />
+          <MandalartList data={data8} />
+          <MandalartList data={data9} />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
